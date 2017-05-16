@@ -4,7 +4,7 @@ function SAdd:__init(addend, negate)
    parent.__init(self)
   
    self.addend = addend
-   self.negate = (negate == nil) and false or negate
+   self.negate = negate or false
 end
 
 function SAdd:updateOutput(input)
